@@ -1,0 +1,98 @@
+.mainbodyflex {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: 1200px auto;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    padding: 50px
+}
+
+.topleft {
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        object-fit: contain;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.topright {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        object-fit: contain;
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.bottomleft {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+
+.bottomright {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        object-fit: contain;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.driverTable {
+    max-width: 800px;
+    width: 100%;
+
+    tr,
+    th,
+    td {
+        border: 3px solid #494949;
+        padding: 8px;
+        font-size: 18px;
+    }
+}
