@@ -12,20 +12,44 @@
 
     display: flex;
     align-content: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    height: auto;
+    background: rgb(77, 72, 105);
+    background: linear-gradient(180deg, rgba(77, 72, 105, 1) 35%, rgba(37, 35, 51, 1) 100%);
+    border-radius: 50px 10px 50px 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 
     img {
         object-fit: contain;
         max-width: 800px;
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        background-color: #EAEAEA;
+        border-radius: 10px 10px 0 0;
     }
 
-    h1 {
+}
+
+.driverCard {
+    background-color: #222029;
+    border-radius: 10px;
+
+    p,
+    b,
+    h2 {
+        color: white !important;
         text-align: center;
+    }
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow:  5px 5px 10px ;
     }
 }
 
@@ -66,11 +90,14 @@
 
 .bottomright {
 
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
 
     img {
         object-fit: contain;
@@ -84,9 +111,45 @@
     }
 }
 
+.newsItem {
+    background-color: #222029;
+    border-radius: 10px;
+
+    p,
+    b,
+    h2 {
+        color: white !important;
+        text-align: center;
+    }
+
+    img {
+        max-width: 290px;
+        width: 100%;
+        max-height: 162px;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 2px solid black;
+    }
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow:  2px 5px 10px ;
+    }
+}
+
+.cardInfo {
+    p {
+        padding: 5px;
+    }
+}
+
 .driverTable {
     max-width: 800px;
     width: 100%;
+    height: auto;
 
     tr,
     th,
@@ -95,4 +158,10 @@
         padding: 8px;
         font-size: 18px;
     }
+}
+
+.driverCard {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
 }

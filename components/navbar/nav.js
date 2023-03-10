@@ -16,7 +16,7 @@ export default function Navbar() {
                 </div>
                 <div className={styles.navbarlist}>
                     <ul>
-                        <li><Link href={'/schedule'}>Schedule</Link></li>
+                        <li>Schedule</li>
                         <li>Standings</li>
                         <li>Teams</li>
                     </ul>
