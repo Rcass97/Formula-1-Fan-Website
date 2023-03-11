@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '@/components/navbar/nav'
-import MainBody from '@/components/mainbody/mainbody'
+import FrontPage from '@/components/mainbody/mainbody'
 import Footer from '@/components/footer/footer'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <MainBody />
+      <FrontPage />
       <Footer />
       <main className={styles.main}>
 

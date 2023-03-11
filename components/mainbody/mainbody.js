@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from './mainbody.module.scss';
 
-export default function MainBody() {
+export default function FrontPage() {
     return (
         <>
             <div className={styles.mainbodyflex}>
